@@ -25,7 +25,7 @@ width: 200px;
     const time = startmin * 60;
 
     const countdownEl = document.getElementById('timer');
-    setInterval(update,1000);
+    setInterval(update(),1000);
 
     function update(){
         const min = Math.floor(time / 60);

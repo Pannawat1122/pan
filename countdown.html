@@ -21,6 +21,7 @@ width: 200px;
  <p id="timer">5.00</p>   
 </body>
 <script>
+    update();
     const startmin = 5;
     const time = startmin * 60;
 
@@ -31,7 +32,7 @@ width: 200px;
         const min = Math.floor(time / 60);
         const sec = time % 60;
 
-        countdownEl.innerHTML = ${min}+':'+${sec};
+        countdownEl.innerHTML = "${min}+':'+${sec}";
 
 
         time=time-1;

@@ -18,7 +18,7 @@ width: 200px;
 }  
 </style>
 <body>
- <p id="timer">0.00</p>   
+ <p id="timer">5.00</p>   
 </body>
 <script>
     var time = 300;
@@ -32,6 +32,9 @@ width: 200px;
 
         countdownEl.innerHTML = `${min}:${sec}`;
         time = time-1;
+    }
+    if(time ==0){
+        alert("time's up");
     }
 </script>
 </html>
